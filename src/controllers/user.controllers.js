@@ -22,7 +22,6 @@ const generateAccessAndRefreshTokens = async(userId) => {
     }
 }
 
-
 const registerUser = asyncHandler( async (req, res) => {
     // res.status(200).json({
     //     message: "ok"
@@ -325,7 +324,6 @@ const updateUserCoverImage = asyncHandler(async(req, res) => {
     return res.status(200)
     .json(new ApiResponse(200, user, "Avatar image updated successfully"))
 })
-
 
 const getUserChannelProfile = asyncHandler(async(req,res) => {
     const {username} = req.params
